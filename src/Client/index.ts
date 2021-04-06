@@ -1,10 +1,9 @@
 import {Client, Collection} from 'discord.js'; //same things as require in js
-//insert to connect to cloud
+//insert import for to connect to cloud
 import path from "path";
 import {readdirSync} from 'fs';
 import {Command, Event, Config} from "../Interfaces";
 import ConfigJson from "../config.json";
-import { dir } from 'node:console';
 
 class ExtendedClient extends Client {
     public commands: Collection<string, Command> = new Collection();
